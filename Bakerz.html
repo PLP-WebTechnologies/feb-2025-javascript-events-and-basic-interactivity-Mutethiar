@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy Bakes</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Bakerz.css">   
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Classy Bakes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Classy Bakes</h1>
+        <p>Delight in every bite. Shop our irresistible baked goods!</p>
+        <a href="#shop" class="cta-button">Explore Our Shop</a>
+    </section>
+
+    <!-- Featured Treats Section -->
+    <section class="featured" id="shop">
+        <h2>Featured Treats</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="Chewy Vegan Chocolate Chip Cookies.jpeg.crdownload" alt="Delicious Cake">
+                <h3>Golden Velvet Cake</h3>
+                <p>Ksh250.00</p>
+                <button class="order-button" onclick="orderItem('Golden Velvet Cake', 'Ksh250.00')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="Famous Byron Bay Chocolate Chip Cookies (crispy 2 weeks!).jpeg.crdownload" alt="Tasty Cookies">
+                <h3>Classic Chocolate Cookies</h3>
+                <p>Ksh150.00</p>
+                <button class="order-button" onclick="orderItem('Classic Chocolate Cookies', 'Ksh150.00')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="Cookie Monster Cookies.jpeg.crdownload" alt="Red Velvet Cupcakes">
+                <h3>Red Velvet Cupcakes</h3>
+                <p>Ksh180.00</p>
+                <button class="order-button" onclick="orderItem('Red Velvet Cupcakes', 'Ksh180.00')">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="Pistachio & White Chocolate Chip Cookies [27 Minutes] (1).jpeg.crdownload" alt="Blueberry Muffins">
+                <h3>Blueberry Muffins</h3>
+                <p>Ksh200.00</p>
+                <button class="order-button" onclick="orderItem('Blueberry Muffins', 'Ksh200.00')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <h2>Place Your Order</h2>
+        <form id="order-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" readonly>
+
+            <label for="product-price">Price:</label>
+            <input type="text" id="product-price" name="product-price" readonly>
+
+            <label for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+
+            <label for="customer-email">Your Email:</label>
+            <input type="email" id="customer-email" name="customer-email" required>
+
+            <label for="customer-address">Delivery Address:</label>
+            <textarea id="customer-address" name="customer-address" required></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Classy Bakes. All rights reserved.</p>
+    </footer>
+
+    <script src="bakerz.js"></script>
+</body>
+</html>
